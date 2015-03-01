@@ -22,7 +22,9 @@ public class FizzBuzzer {
             visszaAdottErtek+="fizz";
         }
         
-        
+        if (Integer.toString(number).contains("5")) {
+            visszaAdottErtek+="buzz";
+        }
         
         if (visszaAdottErtek.isEmpty()) {
             visszaAdottErtek=""+number;
