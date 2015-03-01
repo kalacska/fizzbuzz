@@ -18,6 +18,10 @@ public class FizzBuzzer {
             visszaAdottErtek+="wizz";
         }
         
+        if (Integer.toString(number).contains("3")) {
+            visszaAdottErtek+="fizz";
+        }
+        
         
         
         if (visszaAdottErtek.isEmpty()) {
