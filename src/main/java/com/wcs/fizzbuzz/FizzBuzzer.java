@@ -3,7 +3,28 @@ package com.wcs.fizzbuzz;
 public class FizzBuzzer {
     
     public String execute(int number) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        String visszaAdottErtek="";
+        
+        if (number%3==0) {
+            visszaAdottErtek="fizz";
+        }
+        if (number%5==0) {
+            visszaAdottErtek+="buzz";
+        }
+        
+        //házi
+        if (number%7==0) {
+            visszaAdottErtek+="wizz";
+        }
+        
+        
+        
+        if (visszaAdottErtek.isEmpty()) {
+            visszaAdottErtek=""+number;
+        }
+        
+        return visszaAdottErtek;
     }
     
 }
